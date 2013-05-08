@@ -67,16 +67,12 @@ public class DHT {
 		}
 		// System.out.println("highest: " + hightestEntry.getKey() + ": " +
 		// hightestEntry.getValue());
-		System.out.println("key with highest count:" + hightestEntry.getKey());
-		System.out.println(hightestEntry.getKey() + " appeareds "
+		System.out.println("key with highest count = " + hightestEntry.getKey());
+		System.out.println(hightestEntry.getKey() + " appeared "
 				+ hightestEntry.getValue() + " "
 				+ ((Integer) hightestEntry.getValue() == 1 ? "time" : "times"));
 
 		System.out.println("max ht size = " + max + ", min ht size = " + min);
 		System.out.println("difference between max and min = " + (max - min));
-		/*
-		 * max ht size = 24, min ht size = 1 
-		 * 23
-		 */
 	}
 }
