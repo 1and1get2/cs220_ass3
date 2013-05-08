@@ -20,9 +20,13 @@ public class DHT {
 	}
 	
 	public void statistics(){
+		System.out.println("Entries in the SimpleHTs:");
 		for (int i = 0; i < sHTs.length; i++){
 			//sHTs[i].dump();
-			System.out.println("ht " + i + " = " + sHTs[i].size());
+			String str = ""+sHTs[i].size();
+			//System.out.println(("     "+str).substring(str.length()-1,str.length()+5));
+			System.out.println("ht  " + i + " =" + ("     "+str).substring(str.length()-1,str.length()+5) + 
+					" entries");
 		}
 	}
 }

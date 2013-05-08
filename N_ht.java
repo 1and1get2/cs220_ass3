@@ -59,8 +59,8 @@ public class N_ht {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String nextLine;
-		while ((nextLine = br.readLine()) != null && !nextLine.equals("")){
-			System.out.println("nextLine: " + nextLine);
+		while ((nextLine = br.readLine()) != null){
+			//System.out.println("nextLine: " + nextLine);
 			Scanner scanner = new Scanner(nextLine);
 			fqdn = scanner.next();
 			src = scanner.next();
@@ -78,8 +78,6 @@ public class N_ht {
 			n += 1;
 			//System.out.println("has next line: " + br.)
 		}
-		
-		System.out.println("out");
 		dht.statistics();
 	}
 }
