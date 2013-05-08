@@ -65,7 +65,7 @@ public class N_ht {
 			fqdn = scanner.next();
 			src = scanner.next();
 			key = fqdn + " " + src;
-			System.out.printf("%d: %s\n", n, key);
+			//System.out.printf("%d: %s\n", n, key);
 			dht.lookup(key);
 
 //			if (n >= 99) {
